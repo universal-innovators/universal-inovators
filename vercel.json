@@ -1,0 +1,30 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "build"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "/index.html"
+      }
+    ],
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "nodejs14.x"
+      }
+    },
+    "env": {
+      "NODE_ENV": "production"
+    },
+    "engines": {
+      "node": "14.x"
+    }
+  }
+  
