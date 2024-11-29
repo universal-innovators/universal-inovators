@@ -97,6 +97,29 @@ export default function HeaderLinks(props) {
           <GroupAdd className={classes.icons} />UI Membership
         </Button>
       </ListItem>
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          noLiPadding
+          buttonText="Policies"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={Apps}
+          dropdownList={[
+            <a href="https://merchant.razorpay.com/policy/PJD9VRcXz7xeb7/terms" className={classes.dropdownLink} target="_blank">
+            Terms and Conditions
+            </a>,
+            <a to="https://merchant.razorpay.com/policy/PJD9VRcXz7xeb7/refund" className={classes.dropdownLink} target="_blank">
+            Cancellation & refund policy
+            </a>,
+            <a to="https://merchant.razorpay.com/policy/PJD9VRcXz7xeb7/privacy" className={classes.dropdownLink} target="_blank">
+            Privacy Policy
+            </a>
+            
+          ]}
+        />
+      </ListItem>
       
     </List>
   );
