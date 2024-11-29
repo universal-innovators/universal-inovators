@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 
 // @material-ui/icons
-import { Apps, School,Home,Book,GroupAdd,Money} from "@material-ui/icons";
+import { Apps, School,Home,Book,GroupAdd,Money,Pages } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -94,10 +94,19 @@ export default function HeaderLinks(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <GroupAdd className={classes.icons} />UI Membership
+          <GroupAdd  className={classes.icons} />UI Membership
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Button
+          href="https://merchant.razorpay.com/policy/PJD9VRcXz7xeb7/privacy"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <Pages className={classes.icons} />Policies
+        </Button>
+      </ListItem>
+      {/* <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
           buttonText="Policies"
@@ -119,7 +128,7 @@ export default function HeaderLinks(props) {
             
           ]}
         />
-      </ListItem>
+      </ListItem> */}
       
     </List>
   );
