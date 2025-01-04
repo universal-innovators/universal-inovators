@@ -30,20 +30,7 @@ const Service = function(props){
               <div className="icon"><a href={props.link}><i class={props.icon}></i></a></div>
               <h4 className="title"><a href={props.link}>{props.title}</a></h4>
               <p className={classes.description} >{props.description}</p>
-              <button
-        
-        style={{
-          backgroundColor: "#007bff",
-          color: "#fff",
-          border: "none",
-          padding: "10px 20px",
-          borderRadius: "4px",
-          cursor: "pointer",
-          marginTop: "10px"
-        }}
-      >
-        Pay Now
-      </button>
+              
             </div>
         )}
 
