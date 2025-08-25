@@ -19,6 +19,8 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 // Sections for this page
 import CharPose from "../LandingPage/Sections/CharPose.js"
 import Details from "./journalsDetails.js"
+import JournalCard from "./journalCard.js";
+import { Container } from "@material-ui/core";
 
 
 
@@ -61,14 +63,9 @@ export default function Journals(props) {
         </div>
       </Parallax>
       </Fade>
-      <Fade bottom duration ={2000} delay="500">
-      <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          <Details/>
-          <br/>
-        </div>
-      </div>
-       </Fade>
+      <Container>
+        <JournalCard/>
+      </Container>
       <Footer/>
     </div>
   );

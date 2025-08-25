@@ -25,7 +25,7 @@ export default function StartupHeader(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
-          href="/startup"
+          href="/"
           color="transparent"
           className={classes.navLink}
         >

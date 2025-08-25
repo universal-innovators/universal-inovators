@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 
 // @material-ui/icons
-import { Apps, School,Home,Book,GroupAdd,Money,Pages } from "@material-ui/icons";
+import { Apps, School,Home,Book,GroupAdd,Money,Pages,People } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -60,7 +60,7 @@ export default function HeaderLinks(props) {
         />
       </ListItem>
 
-      <ListItem className={classes.listItem}>
+      {/* <ListItem className={classes.listItem}>
         <Button
           href="/startup"
           color="transparent"
@@ -68,7 +68,7 @@ export default function HeaderLinks(props) {
         >
          <Money className={classes.icons} />StartUp Meet Investor
         </Button>
-      </ListItem>
+      </ListItem> */}
 
       <ListItem className={classes.listItem}>
         <Button
@@ -112,7 +112,7 @@ export default function HeaderLinks(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <Pages  className={classes.icons} />Contact Us
+          <People  className={classes.icons} />Contact Us
         </Button>
       </ListItem>
       {/* <ListItem className={classes.listItem}>

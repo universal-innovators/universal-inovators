@@ -14,6 +14,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import CharPose from "../LandingPage/Sections/CharPose.js";
 import ParticlesContainer from "components/Particle/Particle.js";
 import rocket from "assets/img/rocket2.gif";
+import HeaderLinks from "components/Header/HeaderLinks.js";
 
 const dashboardRoutes = [];
 const useStyles = makeStyles(styles);
@@ -32,7 +33,7 @@ export default function Contact(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        rightLinks={<StartupHeader />}
+        rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
           height: 400,
