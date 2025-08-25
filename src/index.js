@@ -24,7 +24,7 @@ import Investors from "views/SpecialInvestors/specialInvestors";
 import Policy from "views/Policy/Policy.js";
 import Agenda from "views/Agenda/Agenda";
 import MemPay from "views/Mempay/Mempay";
-import Contact from "views/Contact/Contact";
+import Contact from "views/Contact/Contact.js";
 
 // redirects
 import ICICC from "redirects/ICICC"
@@ -55,8 +55,8 @@ ReactDOM.render(
       <Route path="/mempay" component={MemPay}/> 
       <Route path="/icicc" component={ICICC}/>
       <Route path="/dosci" component={DOSCI}/>             
+      <Route path="/contact-us" component={Contact} />
       <Route path="/" component={LandingPage} />
-     <Route path="/contact-us" component={Contact} />
     </Switch>
   </Router>,
   document.getElementById("root")

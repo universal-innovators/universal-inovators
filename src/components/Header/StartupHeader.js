@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 
 // @material-ui/icons
-import { Apps,Home,PersonAdd,CheckBox,Money,People, Create, Person, ViewAgenda,ContactPageIcon} from "@material-ui/icons";
+import { Apps,Home,PersonAdd,CheckBox,Money,People, Create, Person, ViewAgenda} from "@material-ui/icons";
 
 // core components
 import Button from "components/CustomButtons/Button.js";
@@ -84,7 +84,7 @@ export default function StartupHeader(props) {
           color="transparent"
           className={classes.navLink}
         >
-          <ContactPageIcon className={classes.icons} /><b>Contact Us</b>
+          <People className={classes.icons} /><b>Contact Us</b>
         </Button>
       </ListItem>
     </List>
