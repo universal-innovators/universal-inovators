@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 
 
 // @material-ui/icons
-import { Apps, School,Home,Book,GroupAdd,Money,Pages } from "@material-ui/icons";
+import { Apps, School,Home,Book,GroupAdd,Money,Pages,ContactPageIcon } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -104,6 +104,15 @@ export default function HeaderLinks(props) {
           className={classes.navLink}
         >
           <Pages className={classes.icons} />Policies
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/contact-us"
+          color="transparent"
+          className={classes.navLink}
+        >
+          <ContactPageIcon  className={classes.icons} />Contact Us
         </Button>
       </ListItem>
       {/* <ListItem className={classes.listItem}>
